@@ -1,0 +1,26 @@
+[Unit]
+Description=PhoneCoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=phonecoin
+Group=phonecoin
+
+Type=forking
+PIDFile=/var/lib/phonecoind/phonecoind.pid
+
+ExecStart=/usr/bin/phonecoind -daemon -pid=/var/lib/phonecoind/phonecoind.pid \
+          -conf=/etc/phonecoin/phonecoin.conf -datadir=/var/lib/phonecoind
+
+ExecStop=-/usr/bin/phonecoin-cli -conf=/etc/phonecoin/phonecoin.conf \
+         -datadir=/var/lib/phonecoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

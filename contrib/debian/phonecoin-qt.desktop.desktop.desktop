@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=PhoneCoin
+Comment=PhoneCoin P2P Cryptocurrency
+Exec=phonecoin-qt %u
+Terminal=false
+Type=Application
+Icon=phonecoin128
+MimeType=x-scheme-handler/phonecoin;
+Categories=Office;Finance;
+Name[ru]=phonecoin-qt.desktop.desktop

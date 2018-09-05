@@ -1,0 +1,26 @@
+# /etc/conf.d/phonecoind: config file for /etc/init.d/phonecoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/phonecoin/phonecoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/phonecoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/phonecoind.pid"
+
+# Where to write phonecoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/phonecoind"
+
+# User and group to own phonecoind process
+#BITCOIND_USER="phonecoin"
+#BITCOIND_GROUP="phonecoin"
+
+# Path to phonecoind executable
+#BITCOIND_BIN="/usr/bin/phonecoind"
+
+# Nice value to run phonecoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

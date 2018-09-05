@@ -1,0 +1,29 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/phonecoin_bg.qm</file>
+        <file alias="ca">locale/phonecoin_ca.qm</file>
+        <file alias="cs">locale/phonecoin_cs.qm</file>
+        <file alias="da">locale/phonecoin_da.qm</file>
+        <file alias="de">locale/phonecoin_de.qm</file>
+        <file alias="en">locale/phonecoin_en.qm</file>
+        <file alias="en_US">locale/phonecoin_en_US.qm</file>
+        <file alias="es">locale/phonecoin_es.qm</file>
+        <file alias="fi">locale/phonecoin_fi.qm</file>
+        <file alias="fr_FR">locale/phonecoin_fr_FR.qm</file>
+        <file alias="it">locale/phonecoin_it.qm</file>
+        <file alias="ja">locale/phonecoin_ja.qm</file>
+        <file alias="ko_KR">locale/phonecoin_ko_KR.qm</file>
+        <file alias="nl">locale/phonecoin_nl.qm</file>
+        <file alias="pl">locale/phonecoin_pl.qm</file>
+        <file alias="pt">locale/phonecoin_pt.qm</file>
+        <file alias="pt_BR">locale/phonecoin_pt_BR.qm</file>
+        <file alias="ro_RO">locale/phonecoin_ro_RO.qm</file>
+        <file alias="ru">locale/phonecoin_ru.qm</file>
+        <file alias="sk">locale/phonecoin_sk.qm</file>
+        <file alias="sv">locale/phonecoin_sv.qm</file>
+        <file alias="tr">locale/phonecoin_tr.qm</file>
+        <file alias="uk">locale/phonecoin_uk.qm</file>
+        <file alias="zh_CN">locale/phonecoin_zh_CN.qm</file>
+        <file alias="zh_TW">locale/phonecoin_zh_TW.qm</file>
+    </qresource>
+</RCC>
