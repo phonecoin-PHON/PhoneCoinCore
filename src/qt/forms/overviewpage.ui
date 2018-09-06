@@ -251,7 +251,7 @@
                   <cursorShape>PointingHandCursor</cursorShape>
                  </property>
                  <property name="text">
-                  <string>PHC</string>
+                  <string>PHON</string>
                  </property>
                  <property name="flat">
                   <bool>true</bool>
@@ -310,7 +310,7 @@
                <item>
                 <widget class="QLabel" name="label_PhoneCoin2">
                  <property name="text">
-                  <string>PHC</string>
+                  <string>PHON</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
@@ -354,7 +354,7 @@
                <item>
                 <widget class="QLabel" name="label_PhoneCoin3">
                  <property name="text">
-                  <string>PHC</string>
+                  <string>PHON</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
@@ -398,7 +398,7 @@
                <item>
                 <widget class="QLabel" name="label_PhoneCoin4">
                  <property name="text">
-                  <string>PHC</string>
+                  <string>PHON</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>

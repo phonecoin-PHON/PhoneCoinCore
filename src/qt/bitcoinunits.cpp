@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The PHC Core developers
+// Copyright (c) 2017-2018 The PHON Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,18 +20,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(PHC);
-   // unitlist.append(mPHC);
-   // unitlist.append(uPHC);
+    unitlist.append(PHON);
+   // unitlist.append(mPHON);
+   // unitlist.append(uPHON);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case PHC:
-    case mPHC:
-    case uPHC:
+    case PHON:
+    case mPHON:
+    case uPHON:
         return true;
     default:
         return false;
@@ -41,12 +41,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case PHC:
-        return QString("phc");
-    case mPHC:
-        return QString("mphc");
-    case uPHC:
-        return QString::fromUtf8("uphc");
+    case PHON:
+        return QString("phon");
+    case mPHON:
+        return QString("mphon");
+    case uPHON:
+        return QString::fromUtf8("uphon");
     default:
         return QString("???");
     }
@@ -56,23 +56,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case PHC:
-            return QString("PHC");
-        case mPHC:
-            return QString("PHC");
-        case uPHC:
-            return QString::fromUtf8("μPHC");
+        case PHON:
+            return QString("PHON");
+        case mPHON:
+            return QString("PHON");
+        case uPHON:
+            return QString::fromUtf8("μPHON");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case PHC:
-            return QString("tPHC");
-        case mPHC:
-            return QString("mPHC");
-        case uPHC:
-            return QString::fromUtf8("μtPHC");
+        case PHON:
+            return QString("tPHON");
+        case mPHON:
+            return QString("mPHON");
+        case uPHON:
+            return QString::fromUtf8("μtPHON");
         default:
             return QString("???");
         }
@@ -83,23 +83,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case PHC:
-            return QString("PHC");
-        case mPHC:
-            return QString("Milli-PHC (1 / 1" THIN_SP_UTF8 "000)");
-        case uPHC:
-            return QString("Micro-PHC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case PHON:
+            return QString("PHON");
+        case mPHON:
+            return QString("Milli-PHON (1 / 1" THIN_SP_UTF8 "000)");
+        case uPHON:
+            return QString("Micro-PHON (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case PHC:
-            return QString("TestPHCs");
-        case mPHC:
-            return QString("Milli-TestPHCs (1 / 1" THIN_SP_UTF8 "000)");
-        case uPHC:
-            return QString("Micro-TestPHCs (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case PHON:
+            return QString("TestPHONs");
+        case mPHON:
+            return QString("Milli-TestPHONs (1 / 1" THIN_SP_UTF8 "000)");
+        case uPHON:
+            return QString("Micro-TestPHONs (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +109,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case PHC:
+    case PHON:
         return 100000000;
-    case mPHC:
+    case mPHON:
         return 100000;
-    case uPHC:
+    case uPHON:
         return 100;
     default:
         return 100000000;
@@ -123,11 +123,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case PHC:
+    case PHON:
         return 8;
-    case mPHC:
+    case mPHON:
         return 5;
-    case uPHC:
+    case uPHON:
         return 2;
     default:
         return 0;

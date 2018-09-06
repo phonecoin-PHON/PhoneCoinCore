@@ -13,8 +13,8 @@ else
     exit 1
 fi
 
-DESC="v1.1.0.0"
-SUFFIX="372d1ef"
+DESC=""
+SUFFIX=""
 LAST_COMMIT_DATE=""
 if [ -e "$(which git 2>/dev/null)" -a "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ]; then
     # clean 'dirty' status of touched files that haven't been modified
@@ -23,7 +23,7 @@ if [ -e "$(which git 2>/dev/null)" -a "$(git rev-parse --is-inside-work-tree 2>/
     # if latest commit is tagged and not dirty, then override using the tag name
     DESC=$(git describe 2>/dev/null)
     RAWDESC=$(git describe --abbrev=0 2>/dev/null)
-    git diff-index --quiet HEAD -- || DESC="$DESC"
+    git diff-index --quiet HEAD -- || DESC="$DESC-dirty"
 
     # get a string like "2012-04-10 16:27:19 +0200"
     LAST_COMMIT_DATE="$(git log -n 1 --format="%ci")"
