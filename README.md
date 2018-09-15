@@ -5,7 +5,7 @@ PhoneCoin is a brand new digital currency that combines all the positive aspects
 The project brings tangible benefits not only to the digital world but also to the real one.
 
 
-More information at [phonecoin.space](http://www.phonecoin.space) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=), join ou group at [Discord] (https://discord.gg/).
+More information at [phonecoin.space](http://www.phonecoin.space) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=5013892.0;all), join ou group at [Discord] (https://discord.gg/w5AWxqk).
 
 ### Coin Specs
 
