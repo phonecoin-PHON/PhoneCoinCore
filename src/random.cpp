@@ -5,7 +5,7 @@
 
 #include "random.h"
 
-#include <support/cleanse.h>
+#include <cleanse.h>
 #ifdef WIN32
 #include "compat.h" // for Windows API
 #endif

@@ -7,7 +7,7 @@
 #define BITCOIN_SUPPORT_CLEANSE_H
 
 #include <stdlib.h>
-
+#include <openssl/crypto.h>
 // Attempt to overwrite data in the specified memory span.
 void memory_cleanse(void *ptr, size_t len);
 
