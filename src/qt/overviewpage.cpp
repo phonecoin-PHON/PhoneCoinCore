@@ -370,26 +370,46 @@ void OverviewPage::updateMasternodeInfo()
     ui->label_lcolat->setText("5000 Coins");
     ui->label_mcolat->setText("6000 Coins");
     ui->label_fcolat->setText("7000 Coins");
-  } else if (chainActive.Height() >= 200000 && chainActive.Height() < 300000) {
-    ui->label_lcolat->setText("6000 Coins");
-    ui->label_mcolat->setText("7000 Coins");
-    ui->label_fcolat->setText("8000 Coins");
-  } else if (chainActive.Height() >= 300000 && chainActive.Height() < 500000) {
-    ui->label_lcolat->setText("7000 Coins");
-    ui->label_mcolat->setText("8000 Coins");
-    ui->label_fcolat->setText("9000 Coins");
+  } else if (chainActive.Height() >= 200000 && chainActive.Height() < 250000) { // soft fork 70013
+    ui->label_lcolat->setText("50000 Coins");
+    ui->label_mcolat->setText("60000 Coins");
+    ui->label_fcolat->setText("70000 Coins");
+  } else if (chainActive.Height() >= 250000 && chainActive.Height() < 500000) {
+    ui->label_lcolat->setText("60000 Coins");
+    ui->label_mcolat->setText("70000 Coins");
+    ui->label_fcolat->setText("80000 Coins");
   } else if (chainActive.Height() >= 500000 && chainActive.Height() < 750000) {
-    ui->label_lcolat->setText("8000 Coins");
-    ui->label_mcolat->setText("9000 Coins");
-    ui->label_fcolat->setText("10000 Coins");
-  } else if (chainActive.Height() >= 750000 && chainActive.Height() < 1250000) {
-    ui->label_lcolat->setText("9000 Coins");
-    ui->label_mcolat->setText("10000 Coins");
-    ui->label_fcolat->setText("15000 Coins");
+    ui->label_lcolat->setText("70000 Coins");
+    ui->label_mcolat->setText("80000 Coins");
+    ui->label_fcolat->setText("90000 Coins");
+  } else if (chainActive.Height() >= 750000 && chainActive.Height() < 1000000) {
+    ui->label_lcolat->setText("80000 Coins");
+    ui->label_mcolat->setText("90000 Coins");
+    ui->label_fcolat->setText("100000 Coins");
+  } else if (chainActive.Height() >= 1000000 && chainActive.Height() < 1250000) {
+    ui->label_lcolat->setText("90000 Coins");
+    ui->label_mcolat->setText("100000 Coins");
+    ui->label_fcolat->setText("125000 Coins");
+  } else if (chainActive.Height() >= 1250000 && chainActive.Height() < 1500000) {
+    ui->label_lcolat->setText("100000 Coins");
+    ui->label_mcolat->setText("125000 Coins");
+    ui->label_fcolat->setText("150000 Coins");
+  } else if (chainActive.Height() >= 1500000 && chainActive.Height() < 2000000) {
+    ui->label_lcolat->setText("125000 Coins");
+    ui->label_mcolat->setText("150000 Coins");
+    ui->label_fcolat->setText("200000 Coins");
+  } else if (chainActive.Height() >= 2000000 && chainActive.Height() < 2500000) {
+    ui->label_lcolat->setText("150000 Coins");
+    ui->label_mcolat->setText("200000 Coins");
+    ui->label_fcolat->setText("250000 Coins");
+  } else if (chainActive.Height() >= 2500000 && chainActive.Height() < 3000000) {
+    ui->label_lcolat->setText("200000 Coins");
+    ui->label_mcolat->setText("250000 Coins");
+    ui->label_fcolat->setText("350000 Coins");
   } else {
-    ui->label_lcolat->setText("10000 Coins");
-    ui->label_mcolat->setText("15000 Coins");
-    ui->label_fcolat->setText("20000 Coins");
+    ui->label_lcolat->setText("250000 Coins");
+    ui->label_mcolat->setText("350000 Coins");
+    ui->label_fcolat->setText("400000 Coins");
   }
 
 }
