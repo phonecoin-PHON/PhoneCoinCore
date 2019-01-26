@@ -1684,16 +1684,30 @@ int64_t GetMasternodePayment(int nHeight, unsigned mnlevel, int64_t blockValue)
     if (nHeight <= Params().StartMNPaymentsBlock())
         return 0;
 
-    switch(mnlevel)
-    {
-        case 1:
-            return blockValue * 0.2;
+    if (nHeight > 200000) {
+      switch(mnlevel)
+      {
+          case 1:
+              return blockValue * 0.1;
 
-        case 2:
-            return blockValue * 0.3;
+          case 2:
+              return blockValue * 0.25;
 
-        case 3:
-            return blockValue * 0.4;
+          case 3:
+              return blockValue * 0.4;
+      }
+    } else {
+      switch(mnlevel)
+      {
+          case 1:
+              return blockValue * 0.2;
+
+          case 2:
+              return blockValue * 0.3;
+
+          case 3:
+              return blockValue * 0.4;
+      }
     }
 
     return 0;
