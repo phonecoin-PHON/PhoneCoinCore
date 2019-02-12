@@ -152,9 +152,10 @@ public:
         assert(hashGenesisBlock == uint256("000002483b7867c7ec47c26f3b3dc95aefa844d864ea66a02f2fc1271c05b57a"));
         assert(genesis.hashMerkleRoot == uint256("bf00c488073f7f5c1d8308a05a6c7138469a02ad446a11c9dc0e16a26fe4243b"));
 
-        vSeeds.push_back(CDNSSeedData("seed1.phonecoin.space", "seed1.phonecoin.space"));     // Primary DNS Seeder
-        vSeeds.push_back(CDNSSeedData("seed2.phonecoin.space", "seed2.phonecoin.space"));     // Primary DNS Seeder
-        vSeeds.push_back(CDNSSeedData("chain.phonecoin.space", "chain.phonecoin.space"));     // explorer DNS Seeder
+        vSeeds.push_back(CDNSSeedData("seed1.phonecoin.space", "seed1.phonecoin.space"));     // Fix Seed
+        vSeeds.push_back(CDNSSeedData("seed2.phonecoin.space", "seed2.phonecoin.space"));     // Fix Seed
+        vSeeds.push_back(CDNSSeedData("chain.phonecoin.space", "chain.phonecoin.space"));     // explorer Node
+        vSeeds.push_back(CDNSSeedData("seeder.phonecoin.space", "seeder.phonecoin.space"));     // seeder.phonecoin.space
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 117); // p
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 64); // S or T
